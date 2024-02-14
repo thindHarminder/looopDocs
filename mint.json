@@ -27,12 +27,12 @@
   },
   "tabs": [
     {
-      "name": "Weblow Elements",
+      "name": "Weblow Development",
       "url": "api-reference"
     },
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "dashboard"
     }
   ],
   "anchors": [
@@ -48,7 +48,7 @@
     },
     {
       "name": "Developer Support",
-      "icon": "email",
+      "icon": "square-terminal",
       "url": "mailto:customercare@uselooop.com"
     }
   ],
@@ -58,24 +58,29 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "designer-app"
       ]
     },
     {
       "group": "Essentials",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "essentials/webflow-connect",
+        "essentials/shopify-setup",
+        "essentials/webflow-cms",
+        "essentials/cms-verifier",
+        "essentials/embed"
       ]
     },
     {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Dashbaord",
+      "pages": [
+        "dashboard/introduction"
       ]
     },
     {
