@@ -7,25 +7,29 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#ab6cff",
+    "light": "#a972f1",
+    "dark": "#ab6cff",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#ab6cff",
+      "to": "#a972f1"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:customercare@uselooop.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://manage.uselooop.com"
   },
   "tabs": [
+    {
+      "name": "Weblow Elements",
+      "url": "api-reference"
+    },
     {
       "name": "API Reference",
       "url": "api-reference"
@@ -82,10 +86,5 @@
         "api-reference/endpoint/delete"
       ]
     }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  ]
 }
