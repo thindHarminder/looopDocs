@@ -37,19 +37,19 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Tutorials",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/@theuselooop"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "discord",
+      "url": "https://discord.gg/gYK42sh24S"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Developer Support",
+      "icon": "help",
+      "url": "mailto:customercare@uselooop.com"
     }
   ],
   "navigation": [
