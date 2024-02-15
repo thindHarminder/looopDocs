@@ -1,0 +1,18 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "essentials/cms-verifier.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "snippets/variants-cms.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file"
+        }
+    ]
+}
