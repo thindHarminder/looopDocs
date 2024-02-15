@@ -1,6 +1,38 @@
 ---
 title: 'CMS Verifier'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
+description: 'CMS Verifier is avilabe in Webflow Setup tab of Looop dasbaord to verify the CMS connection.' 
 icon: 'badge-check'
 ---
+
+## How to use
+<Frame>
+<img src="/images/all-cms-verifier.png"/>
+</Frame>
+
+When you go to the Webflow Setup tab in the Looop dashboard, you will see the CMS Verifier section.
+If any CMS fields is missing you will see a red error icon or a yellow warning icon.
+
+### Field errors
+<Frame>
+<img src="/images/cms-verifier.png"/>
+</Frame>
+To further investigate the CMS structure click on any CMS colelction name to to see the fields that are missing or incorrect.
+
+- If you see a danger or warning icon on top right next to CMS collection name, it means that Looop was unable to find this CMS collection in your Webflow project.
+
+- If you see a danger icon next to any CMS field, it means that Looop was unable to find this CMS field with same `name` in your CMS collection.
+
+- If you see a warning icon next to any CMS field, it means that Looop was unable to find this CMS field with same `field type` in your CMS collection.
+
+#### Verify refernce and multi-reference fields
+
+Looop CMS verifer shows you the field name, field type and reference it is looking for in comparison to the field name and field type it found in your CMS collection.
+
+<Frame>
+<img src="/images/multi-ref-verifier.png"/>
+</Frame>
+
+The schema is : `Field Name` `Field Type` `Reference CMS` 
+
+- In fields found serction you will be able to see the fields that Looop found in your CMS collection, there type and reference. Here you can see if the referance text is missing in found fields. This means that the refernced CMS found in incorrect.
 

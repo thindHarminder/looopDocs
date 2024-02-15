@@ -8,11 +8,11 @@
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#ab6cff",
-    "light": "#a972f1",
+    "light": "#D8B9FF",
     "dark": "#ab6cff",
     "anchors": {
       "from": "#ab6cff",
-      "to": "#a972f1"
+      "to": "#D8B9FF"
     }
   },
   "topbarLinks": [
@@ -38,12 +38,12 @@
   "anchors": [
     {
       "name": "Tutorials",
-      "url": "tutorials",
+      "url": "https://www.youtube.com/channel/UC5xADlZY5L-TAbwJHsh8uIA",
       "icon": "youtube"
     },
     {
       "name": "How to Guides",
-      "url": "documentation",
+      "url": "dashboard",
       "icon": "shoe-prints"
     }
   ],
@@ -77,12 +77,6 @@
       "group": "Dashbaord",
       "pages": [
         "dashboard/introduction"
-      ]
-    },
-    {
-      "group": "Tutorials",
-      "pages": [
-        "tutorials/introduction"
       ]
     }
   ]

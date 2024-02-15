@@ -15,14 +15,41 @@ By default when you sign up, you will have a store created for you and you will 
 
 <AccordionGroup>
   <Accordion icon="link" title="Connect with Webflow & Shopify">
-   1. Once you create new store in Looop, you will be redirected to setup the connect with Webflow. Click the `Connect` button and you will be redirected to Webflow to authorize the connection with Looop.
-   2. After you have connected with Webflow, you will be redirected to setup the connection with Shopify. Here you will be asked to enter your Shopify `.myshopify.com` URL, Admin API key and Storefront API and then you will be redirected to Shopify to install the Looop app in your store.
-  </Accordion>
+  <Steps>
+  <Step title="Connect Webflow">
+    Once you create new store in Looop, you will be redirected to setup the connect with Webflow. Click the `Connect` button and you will be redirected to Webflow to authorize the connection with Looop.
+  </Step>
+   <Step title="Connect Webflow Site">
+    After connect with Webflow choose the Webflow site you want to connect with Looop.
+  </Step>
+  <Step title="Connect Shopify">
+    After you have connected with Webflow, you will be redirected to setup the connection with Shopify. 
+    <Steps>
+    <Step title="Create a custom private app">
+      You need to create a custom private app in Shopify to get the API keys. You can follow this [guide](/essentials/shopify-setup#step-1-create-a-private-app-in-shopify) to create a custom private app in Shopify.
+    </Step>
+    <Step title="Configure Admin API scopes">
+      You need to configure the Admin API scopes to make sure Looop has access to the data it needs to get from Shopify. You can follow this [guide](/essentials/shopify-setup#step-2-configure-api-scopes) to configure the Admin API scopes.
+    </Step>
+    <Step title="Configure Storefront API scopes">
+      You need to configure the Storefront API scopes to enable developemnt of as headless storefront. You can follow this [guide](/essentials/shopify-setup#step-2-configure-api-scopes) to configure the Storefront API scopes.
+    </Step>
+    <Step title="Get your shopify domain">
+      Enter the `.myshopify.com` domain of your Shopify store. You can find this in your Shopify admin panel. You can follow this [guide](/essentials/shopify-setup#step-4-get-the-shopify-store-url) to get your Shopify domain.
+    </Step>
+    </Steps>
+  </Step>
+</Steps>
+</Accordion>
   <Accordion icon="database" title="Configure CMS">
-    Once you have connected with Webflow and Shopify, you will be redirected to the Dashbaord. Here you will see you first task to configure the CMS. Click on the `Start` button and you will be redirected to the CMS configuration page. Here you will see list of all CMS colelction and all the fields in these collections. You need to create the missing fields to make sure the CMS is ready to get data fro Shopify.
-    <Note>
-     We have built a CMS verifier that will check if your CMS is ready to get data from Shopify. Learn more [here](/essentials/cms-verifier)
-    </Note>
+   <Steps>
+  <Step title="Check CMS fields">
+    Looop create products, variants, colelctions and options CMS and mutiple fields in you Webflow site. However, referance and multi-referance fields are not created by default. You need to create these fields to make sure the CMS is ready to get data from Shopify.
+  </Step>
+  <Step title="Using CMS Verifier">
+    Go to `Dashabord > Webflow Setup` to find the CMS structure and use the CMS verifier to check if your CMS is ready to get data from Shopify. You can also use this [doc](/essentials/webflow-cms) to see all the fields you need in Webflow CMS.
+  </Step>
+</Steps>
   </Accordion>
   <Accordion icon="box" title="Import Shopify data">
     Once you have completed the CMS configuration, your Webflow site is ready to get data from Shopify. In our Looop dashabord your will see three tabs `Products`, `Collections` and `Policies`. In each tab you will see a `Sync` button nect to each item. Click on the `Sync` button to import the data from Shopify to Webflow.
@@ -34,10 +61,17 @@ By default when you sign up, you will have a store created for you and you will 
 <AccordionGroup>
 
   <Accordion icon="code" title="Add the Looop Embed">
-    Looop Embed is the script that you need to add to the head of all the pages in your Webflow site. This script connects your Webflow build with Looop and Shopify. You can add the embed code to your Webflow site by following the [guide](/essentials/embed).
+  <Steps>
+  <Step title="Get the Embed Script">
+   Get the uniqe embed script for your store from the Looop dashabord. You can find the embed script in the `Looop Dashabord > Store Settings > Looop Embed` tab.
+  </Step>
+  <Step title="Paste the code in <Head>">
+    Go to `Webflow Project Settings > Custom Code > Head` and paste the scipt in the head section of your Webflow site.
+  </Step>
+</Steps>
   </Accordion>
 <Accordion icon="paintBrush" title="Develop in Webflow">
-    Looop intregartes with your Webflow site using custom attributes. The Looop embed uses these attributes to connect your Webflow site with Shopify. You will use these attributes to add the shopify functionality. You can learn more about all the possible attributes [here](/webflow/attributes)
+   Once your Shopify data is imported to Webflow, you can start developing pages in Webflow and than use Looop attributes avilable in our [Webflow designer app](/designer-app) to add ecommerce functionality to your site. You can follow this [guide](/webflow) to see how to use Looop attributes to add ecommerce functionality to your site.
 </Accordion>
 <Accordion icon="rocket" title="Deploy your site">
     Once you have added the Looop embed and developed your site in Webflow, you can deploy your site to the Webflow hosting. Looop Embed will connect your Webflow site with Shopify and you will be able to see the data from Shopify in your Webflow site.

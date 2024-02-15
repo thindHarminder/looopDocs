@@ -1,5 +1,61 @@
 ---
 title: 'CMS Configuration'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+description: 'Webflow CMS setup to import Shopify data'
 icon: 'database'
 ---
+import ProductsCms from '/snippets/products-cms.mdx';
+import VariantsCms from '/snippets/variants-cms.mdx';
+import OptionsCms from '/snippets/options-cms.mdx';
+import CollectionsCms from '/snippets/collections-cms.mdx';
+import PoliciesCms from '/snippets/policies-cms.mdx';
+
+We will be using Webflow CMS to import Shopify products, variants, options, and collections. 
+This appraoch will allow you to have server side rendering and SEO optimization for your products. As Webflow will render the product pages, product cards on server side, it will be faster and more SEO optimized.
+
+## Products CMS
+This CMS collection is automatically created by looop onboarding in [Webflow Connect step](/essentials/webflow-connect).
+<Note>
+This CMS colelction is diffrent from `Products` CMS collection that you might have in Webflow ecommerce. 
+</Note>
+
+Below are all the fields that should be created in the `products` CMS collection.
+
+<ProductsCms />
+
+## Variants CMS
+This CMS collection is automatically created by looop onboarding in [Webflow Connect step](/essentials/webflow-connect).
+
+Below are all the fields that should be created in the `variants` CMS collection.
+
+<VariantsCms />
+
+<Note>
+Change the decilal places to 2 for `price` and `compareAtPrice` fields in the CMS settings.
+</Note>
+
+## Options CMS
+This CMS collection is automatically created by looop onboarding in [Webflow Connect step](/essentials/webflow-connect).
+
+Below are all the fields that should be created in the `options` CMS collection.
+
+<OptionsCms />
+
+## Collections CMS
+This CMS collection is automatically created by looop onboarding in [Webflow Connect step](/essentials/webflow-connect).
+
+Below are all the fields that should be created in the `collections` CMS collection.
+
+<CollectionsCms />
+
+## Policies CMS
+
+This is an optional CMS collection that you can create to add policies to your website.
+
+Below are all the fields that should be created in the `policies` CMS collection.
+
+<PoliciesCms />
+
+
+
+
+
