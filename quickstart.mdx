@@ -15,15 +15,17 @@ By default when you sign up, you will have a store created for you and you will 
 
 <AccordionGroup>
   <Accordion icon="link" title="Connect with Webflow & Shopify">
-   All new stores
+   1. Once you create new store in Looop, you will be redirected to setup the connect with Webflow. Click the `Connect` button and you will be redirected to Webflow to authorize the connection with Looop.
+   2. After you have connected with Webflow, you will be redirected to setup the connection with Shopify. Here you will be asked to enter your Shopify `.myshopify.com` URL, Admin API key and Storefront API and then you will be redirected to Shopify to install the Looop app in your store.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Import Shopify data">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
+  <Accordion icon="database" title="Configure CMS">
+    Once you have connected with Webflow and Shopify, you will be redirected to the Dashbaord. Here you will see you first task to configure the CMS. Click on the `Start` button and you will be redirected to the CMS configuration page. Here you will see list of all CMS colelction and all the fields in these collections. You need to create the missing fields to make sure the CMS is ready to get data fro Shopify.
+    <Note>
+     We have built a CMS verifier that will check if your CMS is ready to get data from Shopify. Learn more [here](/essentials/cms-verifier)
+    </Note>
+  </Accordion>
+  <Accordion icon="box" title="Import Shopify data">
+    Once you have completed the CMS configuration, your Webflow site is ready to get data from Shopify. In our Looop dashabord your will see three tabs `Products`, `Collections` and `Policies`. In each tab you will see a `Sync` button nect to each item. Click on the `Sync` button to import the data from Shopify to Webflow.
   </Accordion>
 </AccordionGroup>
 
@@ -31,19 +33,14 @@ By default when you sign up, you will have a store created for you and you will 
 
 <AccordionGroup>
 
-<Accordion icon="message-bot" title="Design and develop in Webflow">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
+  <Accordion icon="code" title="Add the Looop Embed">
+    Looop Embed is the script that you need to add to the head of all the pages in your Webflow site. This script connects your Webflow build with Looop and Shopify. You can add the embed code to your Webflow site by following the [guide](/essentials/embed).
+  </Accordion>
+<Accordion icon="paintBrush" title="Develop in Webflow">
+    Looop intregartes with your Webflow site using custom attributes. The Looop embed uses these attributes to connect your Webflow site with Shopify. You will use these attributes to add the shopify functionality. You can learn more about all the possible attributes [here](/webflow/attributes)
 </Accordion>
 <Accordion icon="rocket" title="Deploy your site">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
+    Once you have added the Looop embed and developed your site in Webflow, you can deploy your site to the Webflow hosting. Looop Embed will connect your Webflow site with Shopify and you will be able to see the data from Shopify in your Webflow site.
 </Accordion>
 
 </AccordionGroup>

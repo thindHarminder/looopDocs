@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Developer Docs",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -28,28 +28,23 @@
   "tabs": [
     {
       "name": "Weblow Development",
-      "url": "api-reference"
+      "url": "webflow"
     },
     {
-      "name": "API Reference",
+      "name": "Looop Dashboard",
       "url": "dashboard"
     }
   ],
   "anchors": [
     {
       "name": "Tutorials",
-      "icon": "youtube",
-      "url": "https://www.youtube.com/@theuselooop"
+      "url": "tutorials",
+      "icon": "youtube"
     },
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/gYK42sh24S"
-    },
-    {
-      "name": "Developer Support",
-      "icon": "square-terminal",
-      "url": "mailto:customercare@uselooop.com"
+      "name": "How to Guides",
+      "url": "documentation",
+      "icon": "shoe-prints"
     }
   ],
   "navigation": [
@@ -72,9 +67,10 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Webflow",
       "pages": [
-        "api-reference/introduction"
+        "webflow/introduction",
+        "webflow/attributes"
       ]
     },
     {
@@ -84,11 +80,9 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Tutorials",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "tutorials/introduction"
       ]
     }
   ]
