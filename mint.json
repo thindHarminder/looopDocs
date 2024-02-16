@@ -15,6 +15,10 @@
       "to": "#D8B9FF"
     }
   },
+  "primaryTab": {
+    "name": "Setup"
+},
+
   "topbarLinks": [
     {
       "name": "Support",
@@ -70,7 +74,16 @@
       "group": "Webflow",
       "pages": [
         "webflow/introduction",
-        "webflow/attributes"
+        {
+          "group": "Product Card",
+          "icon": "cards",
+          "pages": [
+            "webflow/productcard/productcard",
+            "webflow/productcard/quantity",
+            "webflow/productcard/addtocart"
+          ]
+
+        }
       ]
     },
     {

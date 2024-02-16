@@ -3,16 +3,27 @@
         {
             "language": "mdx",
             "scheme": "file",
-            "pattern": "essentials/cms-verifier.mdx"
+            "pattern": "webflow/introduction.mdx"
         },
         {
             "language": "mdx",
             "scheme": "file",
-            "pattern": "snippets/variants-cms.mdx"
+            "pattern": "webflow/attributes/attributes.mdx"
         },
         {
             "language": "mdx",
-            "scheme": "file"
+            "scheme": "file",
+            "pattern": "webflow/attributes/productcard-elements.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "webflow/productcard/addtocart.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "webflow/productcard/quantity.mdx"
         }
     ]
 }

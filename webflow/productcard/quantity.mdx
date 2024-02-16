@@ -1,0 +1,40 @@
+---
+title: 'Quantity'
+description: 'Input used by a user to select the number of items to add to their cart.'
+---
+
+## Quantity Input
+Item quantity input consists of three elements: quantity input, a quantity minus button, and a quantity plus button. This input helps users choose the items to add to their cart.
+You have the freedom to design this field as your heart desires. Just make sure that the Quantity input is a quantity minus button and a quantity plus button is in the same parent element.
+
+<Frame>
+<img src="/images/quantity.jpg" />
+</Frame>
+
+### Input
+```html
+"looop"="quantity"
+```
+```html
+"value"=1
+```
+```html
+"type"="number"
+```
+```html
+"min"=1
+```
+
+### Minus Button
+```html
+"looop"="quantityminus"
+```
+
+### Plus Button
+```html
+"looop"="quantityplus"
+```
+
+<Warning>
+The Quantity wrapper should always be a sibling of the Add to Cart button.
+</Warning>

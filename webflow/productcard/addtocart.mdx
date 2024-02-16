@@ -1,0 +1,43 @@
+---
+title: 'Add to Cart'
+description: 'Button used by the user to add items to their cart'
+---
+
+## Setup
+
+An add Cart button should be present in every Variant item on the product card or the product page. A quantity input must be a sibling of every Add to Cart button.
+Every add to cart button dictates the product and variant that will be added to the cart. 
+
+```html
+"looop"="addtocart"
+```
+
+```html
+"looopID"="{{looop-id}}"
+```
+
+```html
+"looopPrice"="{{looop-price}}"
+```
+
+```html
+"loooppid"="{{looop-id}}"(id of the product)
+```
+
+## Open the cart after adding an item
+
+All Add to the Cart buttons should also have a trigger to start an animation to open your cart so that when the user clicks any Add to Cart button on the website, the cart will open. Looop will update the item list in the background so it is a seamless operation for the end user.
+
+## Out of stock / Not Available state 
+
+If the selected product/variant is not available, the Add to Cart will be disabled and will say Out of Stock or Not Available.
+
+### Style disabled Add to Cart button
+
+When the Add to Cart button is disabled, it should have a different style to indicate that the product is not available. Looop adds a class `out-of-stock` to the button when the product is not available. 
+
+<Warning>
+The Add to Cart button should always be a sibling of Quantity.
+</Warning>
+
+
