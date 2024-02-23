@@ -84,9 +84,14 @@
           "icon": "cards",
           "pages": [
             "webflow/productcard/productcard",
-            "ebflow/productcard/product-options",
             "webflow/productcard/quantity",
-            "webflow/productcard/addtocart"
+            "webflow/productcard/addtocart",
+            {
+              "group": "Product options",
+              "pages": [
+                "webflow/productcard/dropdown-options"
+              ]
+            }
           ]
 
         }
