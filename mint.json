@@ -51,6 +51,11 @@
       "icon": "shoe-prints"
     }
   ],
+  "analytics": {
+    "fathom": {
+        "siteId": "MVDXETUM"
+    }
+},
   "navigation": [
     {
       "group": "Get Started",
@@ -79,6 +84,7 @@
           "icon": "cards",
           "pages": [
             "webflow/productcard/productcard",
+            "ebflow/productcard/product-options",
             "webflow/productcard/quantity",
             "webflow/productcard/addtocart"
           ]
