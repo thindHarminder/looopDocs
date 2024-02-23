@@ -103,16 +103,21 @@
             "webflow/productcard/hero-image"
           ]
 
+        },
+        {
+          "group": "Cart",
+          "icon": "cart-shopping",
+          "pages": [
+            "webflow/cart/cart",
+            {
+              "group": "Default State",
+              "pages": [
+                "webflow/cart/default/wrapper",
+                "webflow/cart/default/list"
+              ]            
+            }
+          ]
         }
-      ]
-    },
-    {
-      "group": "Cart",
-      "icon": "shopping-cart",
-      "pages": [
-        "cart/cart",
-        "cart/checkout",
-        "cart/empty-state"
       ]
     },
     {

@@ -1,4 +1,38 @@
 ---
 title: 'Cart'
-description: 'A div that contains a product image, price, quantity input, and add to cart button'
+description: 'Cart elements allow you to build a custom cart without using Webflow ecommerce cart.'
 ---
+
+The cart element has two states - empty and default. You can style the cart in the empty state and the default state separately. The cart is empty by default.
+
+<Frame>
+<img src="/images/cart-wrapper.jpg" />
+</Frame>
+
+## Cart wrapper
+This is the outermost wrapper of the cart. It contains the cart states.
+
+Give this cart wrapper an attribute of 
+```html
+looop=cart
+```
+## Developing cart states
+
+Inside this wrapper, we need to add two required elements - the empty cart and the default cart.
+
+<CardGroup cols={2}>
+  <Card
+    title="Empty State"
+    icon="box-open"
+    href="https://mintlify.com/docs/settings/global"
+  >
+    This cart state is visible when the cart is empty.
+  </Card>
+  <Card
+    title="Default State"
+    icon="boxes-stacked"
+    href="https://mintlify.com/docs/api-playground/openapi"
+  >
+    This cart state is visible when the cart has items.
+  </Card>
+</CardGroup>
