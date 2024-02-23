@@ -1,0 +1,40 @@
+---
+title: 'Dropdown'
+description: 'Show product options to the user'
+---
+
+The product subscription element shows available subscription options for the parent product card. When the user selects any available subscription, Looop updates the price and compare-price.
+ You can design product subscription element using a [dropdown](/webflow/productcard/subscription/dropdown) or [radio](/webflow/productcard/subscription/radio) button.
+
+## Setup
+We will create a template for product subscriptions. This template will be used to create product subscriptions for each product card. 
+
+
+<Frame>
+<img src="/images/subscription-dropdown.jpg" />
+</Frame>
+
+1. Create a div block and give it the following Attribute:
+```html
+looop=product-subscription-wrapper
+```
+2.. Inside the div block, create a dropdown element and give it the following Attribute:
+```html
+looop=product-subscription-select
+```
+## Default Subscription value
+For most ecommerce brand the subscripotion options start with one time purchase. You can define what this empty value should be by adding the following attribute to the dropdown element:
+```html
+subscription-default=REPLACE_WITH_YOUR_DEFAULT_VALUE
+```
+
+<Note>
+Example:- subscription-default=One-time purchase
+</Note>
+
+## What will be updated?
+On page load for each Shopify subscription group, we will duplicate the `product-subscription-wrapper` and update the `product-subscription-select` with the product subscription values.
+
+<Warning>
+The Options Dropdown element should be inside a Webflow Form element.
+</Warning>

@@ -24,6 +24,21 @@
             "language": "mdx",
             "scheme": "file",
             "pattern": "webflow/productcard/quantity.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "webflow/productcard/subscription/dropdown.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "webflow/productcard/options/dropdown.mdx"
+        },
+        {
+            "language": "mdx",
+            "scheme": "file",
+            "pattern": "webflow/productcard/options/radio.mdx"
         }
     ]
 }

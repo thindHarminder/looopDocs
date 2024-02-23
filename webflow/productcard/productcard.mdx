@@ -5,7 +5,7 @@ description: 'A div that contains a product image, price, quantity input, and ad
 
 The Product Card is the component that contains the main elements of a product, such as the image, price, quantity input, and add to cart button. <br /> 
 It is used to dictate which Shopify product is linked to the current div/section. <br /> <br /> 
-This component is used by Looop to find the add-to-cart  button, quantity input, options selector, and subscription selector related to the product
+This component is used by Looop to find the add-to-cart  button, quantity input, options selector, and subscription selector related to the product.
 
 <Frame>
 <img src="/images/productcard.jpg" />
@@ -19,6 +19,11 @@ looop=productcard
 looopid=SHOPIFY_ID_OF_PRODUCT_FROM_PRODUCTS-CMS_FIELD[LOOOP-ID]
 ```
 The value of `looopid` is the Shopify ID of the product. This can be assessed using the dynamic value for the custom attribute in element setting in Webflow designer. 
+
+<Note>
+On **product page** we will use the section as product card, and will place all ecommerce related elements inside the product card.<br />
+For **collection lists** we will use the Webflow Collection Item as the product card, and will place all ecommerce related elements inside the product card.
+</Note>
 
 <Warning>
 Without the `looopid` attribute, the product card will not be linked to a product and will not be able to add the product to cart of fetch options and subscription plans for the product.

@@ -89,12 +89,30 @@
             {
               "group": "Product options",
               "pages": [
-                "webflow/productcard/dropdown-options"
+                "webflow/productcard/options/dropdown",
+                "webflow/productcard/options/radio"
               ]
-            }
+            },
+            {
+              "group": "Product Subscription",
+              "pages": [
+                "webflow/productcard/subscription/dropdown",
+                "webflow/productcard/subscription/radio"
+              ]
+            },
+            "webflow/productcard/hero-image"
           ]
 
         }
+      ]
+    },
+    {
+      "group": "Cart",
+      "icon": "shopping-cart",
+      "pages": [
+        "cart/cart",
+        "cart/checkout",
+        "cart/empty-state"
       ]
     },
     {

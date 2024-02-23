@@ -1,0 +1,35 @@
+---
+title: 'Dropdown'
+description: 'Show product options to the user'
+---
+
+The product options element shows a set of options available for the parent product card. When the user selects the options, Looop updates the price, the compare price, and the hero picture.
+ You can design product options using a [dropdown](/webflow/productcard/options/dropdown) or [radio](/webflow/productcard/options/radio) button.
+
+## Setup
+We will create a template for product options. This template will be used to create product options for each product card. 
+
+
+<Frame>
+<img src="/images/dropdown-options.jpg" />
+</Frame>
+
+1. Create a div block and give it the following Attribute:
+```html
+looop=product-option-wrapper
+```
+2. Inside the div block, create a text block and give it the following Attribute:
+```html
+looop=product-option-name
+```
+3.. Inside the div block, create a dropdown element and give it the following Attribute:
+```html
+looop=product-option-select
+```
+
+## What will be updated?
+On page load for each Shopify product option, we will duplicate the `product-option-wrapper` and update the `product-option-name` and `product-option-select` with the product option name and values.
+
+<Warning>
+The Options Dropdown element should be inside a Webflow Form element.
+</Warning>

@@ -1,0 +1,42 @@
+---
+title: 'Radio'
+description: 'Show product options to the user'
+---
+
+The product options element shows a set of options available for the parent product card. When the user selects the options, Looop updates the price, the compare price, and the hero picture.
+ You can design product options using a [dropdown](/webflow/productcard/options/dropdown) or [radio](/webflow/productcard/options/radio) button.
+
+## Setup
+We will create a template for product options. This template will be used to create product options for each product card. 
+
+
+<Frame>
+<img src="/images/radio options.jpg" />
+</Frame>
+
+1. Create a div block and give it the following Attribute:
+```html
+looop=product-option-wrapper
+```
+2. Inside the div block, create a text block and give it the following Attribute:
+```html
+looop=product-option-name
+```
+3.. Inside the div block, create a radio element and give it the following Attribute:
+```html
+looop=product-option-select
+```
+
+## Checked State
+<Frame>
+<img src="/images/radio options-checked.jpg" />
+</Frame>
+When the product option is selected, the radio button should be checked. To do this, we will add a combo class of `is-checked` to the radio button.
+You can use this class to design how your checked radio buttons look.
+
+## What will be updated?
+On page load for each Shopify product option, we will duplicate the `product-option-wrapper` for each option set, duplicate `product-option-select` for each value of each option set, and update the `product-option-name` with the product option name.
+
+<Warning>
+Option Radio buttons element should be inside a Webflow Form element.
+</Warning>
