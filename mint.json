@@ -113,7 +113,15 @@
               "group": "Default State",
               "pages": [
                 "webflow/cart/default/wrapper",
-                "webflow/cart/default/list"
+                "webflow/cart/default/list",
+                {
+                  "group": "Cart Item",
+                  "pages": [
+                    "webflow/cart/default/cart-item",
+                    "webflow/cart/default/quantity",
+                    "webflow/cart/default/remove"
+                  ]
+                }
               ]            
             }
           ]

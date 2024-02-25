@@ -1,0 +1,40 @@
+---
+title: 'Cart Item Quantity'
+description: 'Input used by a user to change the quantity of any cart item.'
+---
+
+## Setup
+Cart item quantity input consists of three elements: quantity input, a quantity minus button, and a quantity plus button. This input helps users to change the quantity of parent cart item.
+You have the freedom to design this field as your heart desires. Just make sure that the Quantity input is a quantity minus button and a quantity plus button is in the same parent element.
+
+<Frame>
+<img src="/images/cart-quantity.jpg" />
+</Frame>
+
+### Input
+```html
+looop=itemquantity
+```
+```html
+valu"=1
+```
+```html
+type=number
+```
+```html
+min=1
+```
+
+### Minus Button
+```html
+"looop"="itemquantityminus"
+```
+
+### Plus Button
+```html
+"looop"="itemquantityplus"
+```
+
+<Warning>
+Item Quantity should only be used inside the variant collection item in the cart list. It won't function outside the collection item.
+</Warning>
