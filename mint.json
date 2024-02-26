@@ -119,7 +119,8 @@
                   "pages": [
                     "webflow/cart/default/cart-item",
                     "webflow/cart/default/quantity",
-                    "webflow/cart/default/remove"
+                    "webflow/cart/default/remove",
+                    "webflow/cart/default/subscription"
                   ]
                 }
               ]            
