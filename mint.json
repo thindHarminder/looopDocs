@@ -146,9 +146,17 @@
           "pages": [
             "webflow/markets/markets",
             "webflow/markets/selector",
-            "webflow/markets/form"
+            "webflow/markets/form",
+            "webflow/markets/currency-symbol"
           ]
 
+        },
+        {
+          "group": "Customer Accounts",
+          "icon": "user",
+          "pages": [
+            "webflow/customer/customer"
+          ]
         }
       ]
     },
