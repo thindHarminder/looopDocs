@@ -1,0 +1,31 @@
+---
+title: 'Introduction'
+description: 'Render a list of all orders placed by a customer'
+---
+
+<Frame>
+<img src="/images/orders-list.png" />
+</Frame>
+
+You can use this orders element to display a list of all orders placed by a customer. This element is useful for customer service representatives who need to quickly access a customer's order history. 
+
+Orders list allows users to view the order number, fullfilment status, payment status and also allow users redirect to shopify order page and carrier tracking page.
+
+Orders elements consists of two sub elements:
+
+<CardGroup cols={2}>
+  <Card
+    title="Orders List"
+    icon="input-pipe"
+    href="/webflow/customer/orders-list"
+  >
+    A template that renders a list of all orders placed by a customer.
+  </Card>
+  <Card
+    title="Orders Empty State"
+    icon="list"
+    href="/webflow/cart/default/discount-list"
+  >
+    A div that is visible when there are no orders placed by a customer.
+  </Card>
+</CardGroup>

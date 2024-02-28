@@ -1,0 +1,128 @@
+---
+title: 'Orders List'
+description: 'This element is used by Looop to render the list of all orders placed by the customer.'
+---
+
+
+## Setup 
+<Steps>
+ <Step title="Orders List Wrapper">
+    Add a empty div block on your page.
+ </Step>
+ <Step title="Orders List Wrapper - Attributes">
+   Add following attribute to the div block:
+    ```html
+    looop=order-list
+    ```
+ </Step>
+ <Step title="Order Item Template">
+   Add a div block inside the `order-list`. The div will be used as a template to each individial order. 
+ </Step>
+ <Step title="Order Item Template - Attributes">
+   Add following attribute to the div block:
+    ```html
+    looop=order-item
+    ```
+ </Step>
+  <Step title="Order Item Template - Sub-elements">
+   Use [avilable sub-elements](#avilable-sub-elements) to design the order item.
+ </Step>
+</Steps>
+
+## Avilable Sub-elements
+
+### Order number
+This is a text block that will display the order number.
+```html
+looop=order-number
+```
+
+### Order fullfilment status
+This is a text block that will display the fullfilment status of the order.
+```html
+looop=order-status
+```
+
+### Order payment status
+This is a text block that will display the payment status of the order.
+```html
+looop=payment-status
+```
+
+### Order page link
+This attribute should be added to a button/link block. When clicked, it will redirect the user to the order page.
+```html
+looop=order-link
+```
+
+### Order tracking number
+This is a text block that will display the tracking number of the order.
+```html
+looop=order-tracking-number
+```
+
+### Carrier tracking link
+This attribute should be added to a button/link block. When clicked, it will redirect the user to the carrier tracking page.
+```html
+looop=order-tracking
+```
+
+### Order date
+This is a text block that will display the date of the order.
+```html
+looop=order-date
+```
+
+### Order total
+This is a text block that will display the total amount of the order.
+```html
+looop=order-total
+```
+
+### Order shopify account link
+This attribute should be added to a button/link block. When clicked, it will redirect the user to the Shopify account page, where they can manage subscriptions.
+```html
+looop=order-shopify-account
+```
+
+<Note>
+Order list should be only accessible to logged in users. Use [customer variables](/webflow/customer/variables) to add conditional visibility to the order list.
+</Note>
+
+## Order Status Bagdes
+You can use custom code embed to change the color of order and payment status badges. 
+```html
+<script>
+function badges() {const orderStatusElements = document.querySelectorAll('[looop="order-status"]');
+const orderPaymentElements = document.querySelectorAll('[looop="payment-status"]');
+
+orderStatusElements.forEach((element) => {
+    if(element.textContent === "UNFULFILLED") {
+        element.classList.add("is-warning");
+    } else if(element.textContent === "FULFILLED") {
+        element.classList.add("is-success");
+    } 
+});
+
+orderPaymentElements.forEach((element) => {
+    if(element.textContent === "UNPAID") {
+        element.classList.add("is-warning");
+    } else if(element.textContent === "PAID") {
+        element.classList.add("is-success");
+    } else if (element.textContent === "REFUNDED") {
+        element.classList.add("is-danger");
+    }
+});}
+
+const orderList = document.querySelector('[looop="order-list"]');
+const observer = new MutationObserver(() => {
+    badges();
+});
+observer.observe(orderList, { childList: true, subtree: true });
+</script>
+```
+<Note>
+The code above will add color to the order and payment status badges. It is using combo classes to change the color of the badges. You can change the color of the badges by changing the combo classes in the code.
+</Note>
+
+

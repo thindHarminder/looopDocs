@@ -1,0 +1,23 @@
+---
+title: 'Change Text'
+description: 'These sub-variables is used to change the text context of webflow elements if the user is logged out.'
+---
+
+## How to use
+
+```html
+looop_on-login=change-text
+```
+```html
+change-text="REPLACE_WITH_PLAIN_TEXT"
+```
+
+## Example
+1. Lets say we have a button 'Dashboard' and we want to change the text to 'Login' if the user is logged out.
+```html
+looop_on-logout=change-text
+```
+```html
+change-text="Login"
+```
+

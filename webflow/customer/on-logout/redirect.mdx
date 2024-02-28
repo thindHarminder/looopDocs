@@ -1,0 +1,23 @@
+---
+title: 'Redirect'
+description: 'This sub-variable is used to redirect the customer to a specific page. In combination with the root variable, it can be used to redirect the customer to a specific page if they are not logged in.'
+---
+
+## Setup
+
+This sub-variable can be used in the following way:
+```html
+looop_on-logout=redirect
+```
+```html
+redirect=PATH_TO_PAGE
+```
+
+#### Example
+Let's say that we want to restrict users from accessing the orders page if they are not logged in. We can use the following code to redirect the user to the login page if they are not logged in.
+```html
+looop_on-logout=redirect
+```
+```html
+redirect=/account/login
+```

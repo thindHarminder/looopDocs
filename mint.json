@@ -119,6 +119,8 @@
                   "pages": [
                     "webflow/cart/default/cart-item",
                     "webflow/cart/default/quantity",
+                    "webflow/cart/default/price-total",
+                    "webflow/cart/default/compare-price-total",
                     "webflow/cart/default/remove",
                     "webflow/cart/default/subscription"
                   ]
@@ -156,10 +158,15 @@
           "icon": "user",
           "pages": [
             "webflow/customer/customer",
-            "webflow/customer/login",
-            "webflow/customer/signup",
-            "webflow/customer/recover",
-            "webflow/customer/reset",
+            {
+              "group": "Auth Pages",
+              "pages": [
+                "webflow/customer/login",
+                "webflow/customer/signup",
+                "webflow/customer/recover",
+                "webflow/customer/reset"
+              ]
+            },
             "webflow/customer/update",
             "webflow/customer/address",
             {
@@ -174,8 +181,26 @@
                     "webflow/customer/on-login/remove",
                     "webflow/customer/on-login/change"
                   ]
+                },
+                {
+                  "group": "On Logout Variables",
+                  "pages": [
+                    "webflow/customer/on-logout/redirect",
+                    "webflow/customer/on-logout/css",
+                    "webflow/customer/on-logout/remove",
+                    "webflow/customer/on-logout/change"
+                  ]
                 }
               ]
+            },
+            {
+              "group": "Customer Orders",
+              "pages": [
+                "webflow/customer/orders",
+                "webflow/customer/orders-list",
+                "webflow/customer/order-empty"
+                ]
+            
             }
           ]
         }
