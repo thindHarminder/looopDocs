@@ -1,0 +1,52 @@
+---
+title: 'Discount List'
+description: 'This element is used by Looop to render the list of discount code applied to the cart. '
+---
+
+<Frame>
+<img src="/images/discount-list.svg" />
+</Frame>
+
+## Setup 
+<Steps>
+ <Step title="Discount List Wrapper">
+    Add a empty div block in the  default stage of the cart where you want to render the discount list.
+ </Step>
+ <Step title="Discount List Wrapper - Attributes">
+   Add following attribute to the div block:
+    ```html
+    looop=discountcodeslist
+    ```
+ </Step>
+ <Step title="Discount Code Template">
+   Add a div block inside the `discountcodeslist`. The div will be used as a template to render the discount code list. 
+ </Step>
+ <Step title="Discount Code Template - Attributes">
+   Add following attribute to the div block:
+    ```html
+    looop=discountcodeItem
+    ```
+ </Step>
+  <Step title="Discount Code Template - Name">
+   Add a text block inside the `discountcodeItem` div block with following attribute:
+    ```html
+    looop=discountcodetext
+    ```
+ </Step>
+ <Step title="Discount Code Template - Remove">
+  Add a icon/button inside the `discountcodeItem` div block with following attribute:
+    ```html
+    looop=discountcoderemove
+    ```
+ </Step>
+</Steps>
+
+
+
+<Note>
+The icon/button we created in step 6 will be used as a button to remove the discount code from the cart.
+</Note>
+
+
+
+

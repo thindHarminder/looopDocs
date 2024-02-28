@@ -1,0 +1,39 @@
+---
+title: 'Market Selector'
+description: 'A button or dropdown toggle that shows the currently selected market.'
+---
+
+Market Selector could be a button or dropdown toggle that shows the currently selected market. Plus it could be used to switch between markets. So, when the user clicks on the button, either we use Webflow interactions to show a popup or we use a dropdown toggle to show a dropdown that contains the Markets form.
+
+<Frame>
+<img src="/images/marketselect.svg" />
+</Frame>
+
+## Setup
+<Steps>
+<Step title="Selector Button">
+    Add a div block or a dropdown in a global component. Make sure the `Selector Button` is available on all pages.
+</Step>
+<Step title="Selector - Attributes">
+    Add the following attributes to the `Selector Button`:
+    ```html
+    looop=markets
+    ```
+</Step>
+<Step title="Selector - Default Market">
+    Add the following attributes to the `Selector Button`:
+    ```html
+    defaultmarket=US
+    ```
+    <Note>
+    Replace `US` with the country code of the market you want to set as default. For example, `CA` for Canada, `GB` for the United Kingdom, `AU` for Australia, etc.
+    </Note>
+</Step>
+<Step title="Selector - Selected Market">
+    Add a text block inside the `Selector Button` and add the following attributes to it:
+    ```html
+    looop=currentmarket
+    ```
+    This will show the current selected or default country.
+</Step>
+</Steps>

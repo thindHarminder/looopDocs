@@ -122,10 +122,33 @@
                     "webflow/cart/default/remove",
                     "webflow/cart/default/subscription"
                   ]
-                }
+                },
+                {
+                  "group": "Discounts",
+                  "pages": [
+                    "webflow/cart/default/discount",
+                    "webflow/cart/default/discount-form",
+                    "webflow/cart/default/discount-list"
+                  ]
+                },
+                "webflow/cart/default/subtotal",
+                "webflow/cart/default/checkout",
+                "webflow/cart/default/go-to-cart"
               ]            
-            }
+            },
+            "webflow/cart/empty",
+            "webflow/cart/count"
           ]
+        },
+        {
+          "group": "Markets",
+          "icon": "dollar-sign",
+          "pages": [
+            "webflow/markets/markets",
+            "webflow/markets/selector",
+            "webflow/markets/form"
+          ]
+
         }
       ]
     },

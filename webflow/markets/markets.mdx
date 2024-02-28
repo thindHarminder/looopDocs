@@ -1,0 +1,42 @@
+---
+title: 'Shopify Markets'
+description: 'Looop supports Shopify markets, allowing you to sell products in multiple countries and currencies.'
+---
+
+The Looop Markets element allows Webflow users to display local prices, including currency symbols, and control product visibility based on the current user's market.
+
+We need to build few elements that will allow users to switch between markets, see seclected market and see the products in the selected market.
+
+<Frame>
+<img src="/images/markets.svg" />
+</Frame>
+
+## Required Elements
+<CardGroup cols={2}>
+  <Card
+    title="Market Selector"
+    icon="globe"
+    href="/webflow/markets/selector"
+  >
+    A button that shows currentlly selected market.
+  </Card>
+  <Card
+    title="Market Form"
+    icon="list-dropdown"
+    href="/webflow/markets/form"
+  >
+    A form with a list of markets that allows user to switch between markets.
+  </Card>
+</CardGroup>
+
+## Opational Elements
+
+<CardGroup cols={2}>
+  <Card
+    title="Currency Symbol"
+    icon="dollar-sign"
+    href="/webflow/cart/default/discount-form"
+  >
+   A text element that shows the currency symbol of the selected market.
+  </Card>
+</CardGroup>

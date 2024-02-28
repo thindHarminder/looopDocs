@@ -1,0 +1,29 @@
+---
+title: 'Checkout Button'
+description: 'The "checkout button," as it self explains, redirects the user to checkout.'
+---
+
+
+This button has two states: default state and loading state. These two states are achieved by creating a custom button with two required elements:
+
+<Frame>
+<img src="/images/checkoutbutton.webp" />
+</Frame>
+
+## Text Block
+This would be your button text and the default state of the button. This text block needs to have the following custom attribute:
+```html
+"looop"="checkoutText"
+```
+
+## Loader
+
+This would be the loading state of your button (triggered when users click the checkout button). In the background, looop will communicate with Shopify to create a checkout with the user's current cart items and their quantity. 
+This loader can be any Webflow element with the following custom attribute:
+```html
+"looop"="checkoutLoader"
+```
+
+<Note>
+We recommend that you don't use Webflow's native button or div block to create this button. We recommend using Webflow Custom element to create this button.
+</Note>
