@@ -1,0 +1,78 @@
+---
+title: 'Change Text'
+description: 'These sub-variables is used to change the text context of webflow elements if the user is logged in.'
+---
+
+## How to use
+
+```html
+looop_on-login=change-text
+```
+```html
+change-text="REPLACE_WITH_SUB_VARIABLE_OR_PLAIN_TEXT"
+```
+
+## Avilable Sub-Variables
+
+### Email 
+This will replace the text with the logged in user's email.
+```html
+change-text="email"
+```
+
+### First Name
+This will replace the text with the logged in user's first name.
+```html
+change-text="firstname"
+```
+
+### Last Name
+This will replace the text with the logged in user's last name.
+```html
+change-text="lastname"
+```
+
+### Full Name
+This will replace the text with the logged in user's full name.
+```html
+change-text="fullname"
+```
+### User ID
+This will replace the text with the logged in user's user id.
+```html
+change-text="id"
+```
+### Phone
+This will replace the text with the logged in user's phone number.
+```html
+change-text="phone"
+```
+
+### Address
+This will replace the text with the logged in user's address.
+```html
+change-text="address"
+```
+
+<Note>
+If value of change-text is not from sub-variables noted ablove, Looop will replace the text with the value of change-text.
+</Note>
+
+## Example
+1. Lets say we want to change the text of a button to the logged in user's first name. We can do this by adding the following attributes to the button element.
+
+```html
+looop_on-login=change-text
+```
+```html
+change-text="firstname"
+```
+
+2. Now if we want to chnage teh text of same button to to say "Logged in" if the user is logged in, we can do this by adding the following attributes to the button element.
+
+```html
+looop_on-login=change-text
+```
+```html
+change-text="Logged in"
+```

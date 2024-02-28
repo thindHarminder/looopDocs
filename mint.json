@@ -16,7 +16,7 @@
     }
   },
   "primaryTab": {
-    "name": "Setup"
+    "name": "Onbaording"
 },
 
   "topbarLinks": [
@@ -31,7 +31,7 @@
   },
   "tabs": [
     {
-      "name": "Weblow Development",
+      "name": "Weblow Setup",
       "url": "webflow"
     },
     {
@@ -159,7 +159,24 @@
             "webflow/customer/login",
             "webflow/customer/signup",
             "webflow/customer/recover",
-            "webflow/customer/reset"
+            "webflow/customer/reset",
+            "webflow/customer/update",
+            "webflow/customer/address",
+            {
+              "group": "Customer Variables",
+              "pages": [
+                "webflow/customer/variables",
+                {
+                  "group": "On Login Variables",
+                  "pages": [
+                    "webflow/customer/on-login/redirect",
+                    "webflow/customer/on-login/css",
+                    "webflow/customer/on-login/remove",
+                    "webflow/customer/on-login/change"
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]

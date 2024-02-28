@@ -1,0 +1,23 @@
+---
+title: 'Introduction'
+description: 'Customer Variables are a combination of variables that can be used to modify the Webflow site based on the customer authentication status.'
+---
+
+## Root Variables
+1. looop_on-login - This variable is true when the customer is logged in.
+2. looop_on-logout - This variable is true when the customer is logged out.
+
+## Combination of variables
+Each of the root variables can be combined with sub-variables to create a logic to show customer profile values like name, email, phone etc. or modify elements visibility.
+
+## How to use
+
+We use the customer variables by setting custom attributes on the Webflow elements, where the root variable is the name of the attribute and the value is the sub-variable.
+
+For example, to show an element when the customer is logged in, we can set the custom attribute:
+    
+    ```html
+    looop_on-login=show
+    ```
+
+

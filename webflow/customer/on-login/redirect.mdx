@@ -1,0 +1,23 @@
+---
+title: 'Redirect'
+description: 'This sub-variable is used to redirect the customer to a specific page. In combination with the root variable, it can be used to redirect the customer to a specific page based on the authentication status.'
+---
+
+## Setup
+
+This sub-variable can be used in the following way:
+```html
+looop_on-login=redirect
+```
+```html
+redirect=PATH_TO_PAGE
+```
+
+#### Example
+Lets say that we want that if someone is logged in, they should be redirected to the home page if they access the login page. We can use the following code:
+```html
+looop_on-login=redirect
+```
+```html
+redirect=/
+```

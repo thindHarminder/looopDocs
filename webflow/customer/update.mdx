@@ -1,0 +1,53 @@
+---
+title: 'Update Form'
+description: 'Allow users to update their profile information like name, email, and password.'
+---
+
+## Setup
+<Steps>
+<Step title="Update Form">
+Add a Webflow form to anywhere on your site. Make sure it is only accessible to logged in users. You can achieve this by adding a conditional Visibility to the form using [customer variables]().
+</Step>
+<Step title="Update Form - Attribute">
+ Add the following attribute to the `Form` element of the Webflow form:
+    ```html
+    looop=customerupdateform
+    ```
+</Step>
+<Step title="Update Form - Fields">
+Add [available fields](#available-fields) to the form
+</Step>
+</Steps>
+
+## Available Fields 
+
+### First Name
+<sup>`optional`</sup>
+```html
+looop=customer_firstname
+```
+### Last Name
+<sup>`optional`</sup>
+```html
+looop=customer_lastname
+```
+### Phone
+<sup>`optional`</sup>
+```html
+looop=customer_phone
+```
+### Marketing Concent
+<sup>`optional`</sup>
+```html
+looop=marketing_concent
+```
+### Email
+<sup>`optional`</sup>
+```html
+looop=customer_email
+```
+### Password
+<sup>`optional`</sup>
+```html
+looop=customer_password
+```
