@@ -1,0 +1,38 @@
+---
+title: 'Login'
+description: 'Allow users to log in to their account'
+---
+
+## Setup
+<Steps>
+<Step title="Login Form">
+Add a Webflow form to the Login page.
+</Step>
+<Step title="Login Form - Attribute">
+ Add the following attribute to the `Form` element of the Webflow form:
+    ```html
+    looop=loginform
+    ```
+</Step>
+<Step title="Login Form - Fields">
+Add [available fields](#available-fields) to the form
+</Step>
+<Step title="Success Redirect">
+In the `Form` element settings, set the `Redirect URL`. On successful login, the user will be redirected to this URL.
+<Frame>
+<img src="/images/form-redirect.png" />
+</Frame>
+</Step>
+</Steps>
+
+## Available Fields 
+
+### Email <sup>`required`</sup>
+```html
+looop=customer_email
+```
+
+### Password <sup>`required`</sup>
+```html
+looop=customer_password
+```

@@ -1,0 +1,56 @@
+---
+title: 'Signup'
+description: 'Allow users to sign up for an account.'
+---
+
+## Setup
+<Steps>
+<Step title="Signup Form">
+Add a Webflow form to the Signup page.
+</Step>
+<Step title="Signup Form - Attribute">
+ Add the following attribute to the `Form` element of the Webflow form:
+    ```html
+    looop=signupform
+    ```
+</Step>
+<Step title="Signup Form - Fields">
+Add [available fields](#available-fields) to the form
+</Step>
+<Step title="Success Redirect">
+In the `Form` element settings, set the `Redirect URL`. On successful signup, the user will be redirected to this URL.
+<Frame>
+<img src="/images/form-redirect.png" />
+</Frame>
+</Step>
+</Steps>
+
+## Available Fields 
+
+### First Name <sup>`required`</sup>
+```html
+looop=customer_firstname
+```
+### Last Name <sup>`required`</sup>
+```html
+looop=customer_lastname
+```
+
+### Email <sup>`required`</sup>
+```html
+looop=customer_email
+```
+
+### Password <sup>`required`</sup>
+
+```html
+looop=customer_password
+```
+
+### Marketing Consent <sup>`optional`</sup>
+```html
+looop=marketing_consent
+```
+<Note>
+Make sure the marketing_concent field is a checkbox. This field should be optional and can be used to collect user consent for marketing.
+</Note>

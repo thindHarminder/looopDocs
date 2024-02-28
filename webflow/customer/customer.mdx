@@ -6,10 +6,10 @@ description: 'Allow users to create and manage their own accounts.'
 ## Required Page Structure
 
 We need all the following pages in the webflow project in a `account` folder:
-1. Login - Used to login to the account
-2. Signup - Used to create a new account
-3. Recover - Used to recover a lost password
-4. Reset - Used to set a new password after a recovery
+1. [Login](/webflow/customer/login) - Used to login to the account
+2. [Signup](/webflow/customer/signup) - Used to create a new account
+3. [Recover](/webflow/customer/recover) - Used to recover a lost password
+4. [Reset](/webflow/customer/reset) - Used to set a new password after a recovery
 
 <Frame>
 <img src="/images/account-pages.png" />
@@ -19,24 +19,31 @@ You can also create a profile and order page using following Looop Elements:
 <CardGroup cols={2}>
   <Card
     title="Customer Variables"
-    icon="dollar-sign"
+    icon="code"
     href="/webflow/cart/default/discount-form"
   >
-   A text element that shows the currency symbol of the selected market.
+   Show customer profile values like name, email, phone etc. or modify elemets visibility.
   </Card>
    <Card
     title="Customer Update Form"
-    icon="dollar-sign"
+    icon="list-dropdown"
     href="/webflow/cart/default/discount-form"
   >
-   A text element that shows the currency symbol of the selected market.
+   A  Webflow form element that allows the customer to update their profile.
+  </Card>
+   <Card
+    title="Customer Address Form"
+    icon="location-pin"
+    href="/webflow/cart/default/discount-form"
+  >
+   A  Webflow form element that allows the customer to update their default address.
   </Card>
   <Card
     title="Orders List"
-    icon="dollar-sign"
+    icon="boxes-stacked"
     href="/webflow/cart/default/discount-form"
   >
-   A text element that shows the currency symbol of the selected market.
+   A list of orders that the customer has placed.
   </Card>
 </CardGroup>
 

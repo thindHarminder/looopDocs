@@ -1,0 +1,28 @@
+---
+title: 'Recover'
+description: 'Allow users to recover their account password by sending a recovery email.'
+---
+
+## Setup
+<Steps>
+<Step title="Recover Form">
+Add a Webflow form to the Recover page.
+</Step>
+<Step title="Recover Form - Attribute">
+ Add the following attribute to the `Form` element of the Webflow form:
+    ```html
+    looop=recoverform
+    ```
+</Step>
+<Step title="Recover Form - Fields">
+Add [available fields](#available-fields) to the form
+</Step>
+</Steps>
+
+## Available Fields 
+
+### Email <sup>`required`</sup>
+```html
+looop=customer_email
+```
+

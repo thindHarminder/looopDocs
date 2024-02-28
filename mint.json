@@ -155,7 +155,11 @@
           "group": "Customer Accounts",
           "icon": "user",
           "pages": [
-            "webflow/customer/customer"
+            "webflow/customer/customer",
+            "webflow/customer/login",
+            "webflow/customer/signup",
+            "webflow/customer/recover",
+            "webflow/customer/reset"
           ]
         }
       ]
