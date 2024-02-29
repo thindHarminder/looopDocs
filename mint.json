@@ -46,9 +46,9 @@
       "icon": "youtube"
     },
     {
-      "name": "How to Guides",
-      "url": "dashboard",
-      "icon": "shoe-prints"
+      "name": "Cloneables",
+      "url": "https://webflow.com/@thind-dev/sites",
+      "icon": "copy"
     }
   ],
   "analytics": {
