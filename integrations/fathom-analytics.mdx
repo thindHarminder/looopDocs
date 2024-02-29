@@ -1,0 +1,21 @@
+---
+title: 'Fathom Analytics'
+description: 'Enabling Fathom Analytics for for Looop will allow you to track add to cart and checkout events.'
+---
+
+<Steps>
+<Step title="Install Fathom Analytics">
+For this integration, you will need to have a Fathom Analytics installed on your website. If you haven't done so, you can follow the instructions on the <a href="https://usefathom.com/video/webflow" target="_blank">Fathom Help</a>.
+</Step>
+<Step title="Update Looop Config">
+Add `fathomAnalytics: true,` to your Looop Config. This will enable the Fathom Analytics integration for Looop. Your Looop Config should look like this:
+ ```html
+ <script>
+    window.LooopConfig = {
+        // ... other previous configs
+    fathomAnalytics: true,
+    }
+</script>
+```
+</Step>
+</Steps>

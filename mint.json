@@ -35,8 +35,8 @@
       "url": "webflow"
     },
     {
-      "name": "Dashboard",
-      "url": "dashboard"
+      "name": "Integrations",
+      "url": "integrations"
     }
   ],
   "anchors": [
@@ -243,6 +243,23 @@
         }
         ,
             "dashboard/cms-verifier"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "icon": "link",
+      "pages": [
+        "integrations/introduction",
+        "integrations/looop-config",
+        "integrations/google-analytics",
+        "integrations/fathom-analytics"
+      ]
+    },
+    {
+      "group": "JS Utilities",
+      "icon": "code",
+      "pages": [
+        "integrations/js-utils/introduction"
       ]
     }
   ]

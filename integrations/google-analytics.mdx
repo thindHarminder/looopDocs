@@ -1,0 +1,21 @@
+---
+title: 'Google Analytics'
+description: 'Enabling Google Analytics for for Looop will allow you to track add to cart and checkout events.'
+---
+
+<Steps>
+<Step title="Install Google Analytics">
+For this integration, you will need to have a Google Analytics installed on your website. If you haven't done so, you can follow the instructions on the <a href="https://webflow.com/blog/how-to-add-google-analytics" target="_blank">Webflow Blog</a>.
+</Step>
+<Step title="Update Looop Config">
+Add `googleAnalytics: true,` to your Looop Config. This will enable the Google Analytics integration for Looop. Your Looop Config should look like this:
+ ```html
+ <script>
+    window.LooopConfig = {
+        // ... other previous configs
+    googleAnalytics: true,
+    }
+</script>
+```
+</Step>
+</Steps>
