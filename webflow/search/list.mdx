@@ -1,0 +1,34 @@
+---
+title: 'Search List'
+description: 'This element will show the results for the search query.'
+---
+
+
+## Setup 
+<Steps>
+ <Step title="Search List Wrapper">
+    Add a empty div block on your page.
+ </Step>
+ <Step title="Search List Wrapper - Attributes">
+   Add following attribute to the div block:
+    ```html
+    looop=predictive-search-list
+    ```
+ </Step>
+ <Step title="Search Item Template">
+   Add a div block inside the `predictive-search-results`. The div will be used as a template to each search result. 
+ </Step>
+ <Step title="Search Item Template - Attributes">
+   Add following attribute to the div block:
+    ```html
+    looop=predictive-search-item
+    ```
+ </Step>
+    <Step title="Search Item Template - Text">
+    Add a text block inside the `predictive-search-item`. The text block will be used to display the product name.
+    <Warning>
+    Don't style the text block. The style should be applied by the `Search Item Template`.
+    </Warning>
+    </Step>
+</Steps>
+

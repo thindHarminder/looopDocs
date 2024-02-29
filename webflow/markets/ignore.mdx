@@ -1,0 +1,11 @@
+---
+title: 'Market Ignore'
+description: 'Prevent products cards from getting removed from the DOM if they are not in the market'
+---
+By default Looop removes products from the DOM if they are not in the market. This is a good thing because it keeps the DOM clean and users dont see products that are not avilable in there selected market. 
+
+However, we want that all our product pages are indexed by search engines and we want to show the products even if they are not in the market. So we will add the following attribute to product card of the product page.
+
+```html
+looopmarket="ignore"
+```

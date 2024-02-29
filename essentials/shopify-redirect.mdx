@@ -1,0 +1,40 @@
+---
+title: 'Shopify Redirect'
+description: 'Redirect users from your Shopify store to webflow.'
+icon: 'rotate-right'
+---
+
+import Redirect from '/snippets/shopify-store-redirect.mdx';
+import RedirectCheckout from '/snippets/shopify-checkout-redirect.mdx';
+
+We want to redirect users from our Shopify store to our Webflow site. This is a common use case when you want to use Webflow for your website and Shopify for the backend. 
+We want to make sure that when users click on any link on the Google or Facebook product catalog, they are redirected to our Webflow site.
+
+## Redirect Setup
+
+Add this code to your Shopify theme.liquid file. This will redirect all the users to your Webflow site.
+
+<Redirect />
+
+## Sucessfull Checkout Redirect
+
+We also want to record when a customer checkout was successful. We will add the code snippet below in the `Additional scripts` section of the Shopify checkout settings.
+
+<Steps>
+<Step>
+Go to your Shopify admin.
+</Step>
+<Step>
+Click on the `Settings` button on the bottom left.
+</Step>
+<Step>
+Click on the `Checkout` tab.
+</Step>
+<Step>
+Scroll down to the `Additional scripts` section.
+</Step>
+<Step>
+<RedirectCheckout />
+</Step>
+</Steps>
+

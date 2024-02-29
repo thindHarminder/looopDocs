@@ -3,7 +3,7 @@
         {
             "language": "mdx",
             "scheme": "file",
-            "pattern": "webflow/customer/on-logout/redirect.mdx"
+            "pattern": "webflow/search/search.mdx"
         }
     ]
 }

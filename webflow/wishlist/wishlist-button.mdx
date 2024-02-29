@@ -1,0 +1,35 @@
+---
+title: 'Wishlist Button'
+description: 'Wishlist button allows users to add/remove products to a wishlist and also serves as indicator if parent product is already in the wishlist.'
+---
+<Frame>
+<img src="/images/wishlist-button.svg" />
+</Frame>
+
+Wishlist button elelemnt has two states: active and inactive. Active state is used when the product is already in the wishlist and inactive state is used when the product is not in the wishlist.
+We create these two states by adding two diffrent icons to the button. One for active state and one for inactive state.
+
+## Steps 
+<Steps>
+<Step title="Wishlist Button">
+Add a empty div/custom element inside a [product card](/webflow/productcard/productcard). This will be the wishlist button.
+</Step>
+<Step title="Wishlist Button - Attributes">
+Add the following attribute to the wishlist button:
+```html
+looop=wishlist_button
+```
+</Step>
+<Step title="Wishlist Button - Inactive">
+Add a icon to the wishlist button. This icon will be used when the product is not in the wishlist. Then add the following attribute to the icon:
+```html
+looop=wishlist_button-inactive
+```
+</Step>
+<Step title="Wishlist Button - Active">
+Add a icon to the wishlist button. This icon will be used when the product is in the wishlist. Then add the following attribute to the icon:
+```html
+looop=wishlist_button-active
+```
+</Step>
+</Steps>

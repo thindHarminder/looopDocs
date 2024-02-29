@@ -72,7 +72,8 @@
         "essentials/shopify-setup",
         "essentials/webflow-cms",
         "essentials/cms-verifier",
-        "essentials/embed"
+        "essentials/embed",
+        "essentials/shopify-redirect"
       ]
     },
     {
@@ -149,7 +150,8 @@
             "webflow/markets/markets",
             "webflow/markets/selector",
             "webflow/markets/form",
-            "webflow/markets/currency-symbol"
+            "webflow/markets/currency-symbol",
+            "webflow/markets/ignore"
           ]
 
         },
@@ -201,7 +203,27 @@
                 "webflow/customer/order-empty"
                 ]
             
-            }
+            },
+            "webflow/customer/logout"
+          ]
+        },
+        {
+          "group": "Wishlist",
+          "icon": "heart",
+          "pages": [
+            "webflow/wishlist/wishlist",
+            "webflow/wishlist/wishlist-button",
+            "webflow/wishlist/wishlist-list",
+            "webflow/wishlist/wishlist-empty"
+          ]
+        },
+        {
+          "group": "Search",
+          "icon": "magnifying-glass",
+          "pages": [
+            "webflow/search/search",
+            "webflow/search/form",
+            "webflow/search/list"
           ]
         }
       ]
