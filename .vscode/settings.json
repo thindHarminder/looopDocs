@@ -1,9 +1,0 @@
-{
-    "grammarly.selectors": [
-        {
-            "language": "mdx",
-            "scheme": "file",
-            "pattern": "webflow/search/search.mdx"
-        }
-    ]
-}

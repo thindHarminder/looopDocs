@@ -35,7 +35,7 @@
       "url": "webflow"
     },
     {
-      "name": "Looop Dashboard",
+      "name": "Dashboard",
       "url": "dashboard"
     }
   ],
@@ -231,7 +231,18 @@
     {
       "group": "Dashbaord",
       "pages": [
-        "dashboard/introduction"
+        "dashboard/introduction",
+        {
+          "group": "Sync Data",
+          "icon": "shopify",
+          "pages": [
+            "dashboard/sync-products",
+            "dashboard/sync-collections",
+            "dashboard/sync-policies"
+          ]
+        }
+        ,
+            "dashboard/cms-verifier"
       ]
     }
   ]
