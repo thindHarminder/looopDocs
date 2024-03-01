@@ -18,6 +18,11 @@
   "primaryTab": {
     "name": "Onbaording"
 },
+"modeToggle": {
+  "default": "light",
+  "isHidden": false
+},
+
 
   "topbarLinks": [
     {
