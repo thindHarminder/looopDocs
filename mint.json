@@ -1,273 +1,267 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Developer Docs",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#ab6cff",
-    "light": "#D8B9FF",
-    "dark": "#ab6cff",
-    "anchors": {
-      "from": "#ab6cff",
-      "to": "#D8B9FF"
-    }
-  },
-  "primaryTab": {
-    "name": "Onbaording"
-},
-"modeToggle": {
-  "default": "light",
-  "isHidden": false
-},
-
-
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:customercare@uselooop.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://manage.uselooop.com"
-  },
-  "tabs": [
-    {
-      "name": "Weblow Setup",
-      "url": "webflow"
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Developer Docs",
+    "logo": {
+        "dark": "/logo/dark.svg",
+        "light": "/logo/light.svg"
     },
-    {
-      "name": "Integrations",
-      "url": "integrations"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Tutorials",
-      "url": "https://www.youtube.com/channel/UC5xADlZY5L-TAbwJHsh8uIA",
-      "icon": "youtube"
+    "favicon": "/favicon.svg",
+    "colors": {
+        "primary": "#ab6cff",
+        "light": "#D8B9FF",
+        "dark": "#ab6cff",
+        "anchors": {
+            "from": "#ab6cff",
+            "to": "#D8B9FF"
+        }
     },
-    {
-      "name": "Cloneables",
-      "url": "https://webflow.com/@thind-dev/sites",
-      "icon": "copy"
-    }
-  ],
-  "analytics": {
-    "fathom": {
-        "siteId": "MVDXETUM"
-    }
-},
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "designer-app"
-      ]
+    "primaryTab": {
+        "name": "Onbaording"
     },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/webflow-connect",
-        "essentials/shopify-setup",
-        "essentials/webflow-cms",
-        "essentials/cms-verifier",
-        "essentials/embed",
-        "essentials/shopify-redirect"
-      ]
+    "modeToggle": {
+        "default": "light",
+        "isHidden": false
     },
-    {
-      "group": "Webflow",
-      "pages": [
-        "webflow/introduction",
+    "topbarLinks": [
         {
-          "group": "Product Card",
-          "icon": "cards",
-          "pages": [
-            "webflow/productcard/productcard",
-            "webflow/productcard/quantity",
-            "webflow/productcard/addtocart",
-            {
-              "group": "Product options",
-              "pages": [
-                "webflow/productcard/options/dropdown",
-                "webflow/productcard/options/radio"
-              ]
-            },
-            {
-              "group": "Product Subscription",
-              "pages": [
-                "webflow/productcard/subscription/dropdown",
-                "webflow/productcard/subscription/radio"
-              ]
-            },
-            "webflow/productcard/hero-image"
-          ]
-
+            "name": "Support",
+            "url": "mailto:customercare@uselooop.com"
+        }
+    ],
+    "topbarCtaButton": {
+        "name": "Dashboard",
+        "url": "https://manage.uselooop.com"
+    },
+    "tabs": [
+        {
+            "name": "Weblow Setup",
+            "url": "webflow"
         },
         {
-          "group": "Cart",
-          "icon": "cart-shopping",
-          "pages": [
-            "webflow/cart/cart",
-            {
-              "group": "Default State",
-              "pages": [
-                "webflow/cart/default/wrapper",
-                "webflow/cart/default/list",
-                {
-                  "group": "Cart Item",
-                  "pages": [
-                    "webflow/cart/default/cart-item",
-                    "webflow/cart/default/quantity",
-                    "webflow/cart/default/price-total",
-                    "webflow/cart/default/compare-price-total",
-                    "webflow/cart/default/remove",
-                    "webflow/cart/default/subscription"
-                  ]
-                },
-                {
-                  "group": "Discounts",
-                  "pages": [
-                    "webflow/cart/default/discount",
-                    "webflow/cart/default/discount-form",
-                    "webflow/cart/default/discount-list"
-                  ]
-                },
-                "webflow/cart/default/subtotal",
-                "webflow/cart/default/checkout",
-                "webflow/cart/default/go-to-cart"
-              ]            
-            },
-            "webflow/cart/empty",
-            "webflow/cart/count"
-          ]
+            "name": "Integrations",
+            "url": "integrations"
+        }
+    ],
+    "anchors": [
+        {
+            "name": "Tutorials",
+            "url": "https://www.youtube.com/channel/UC5xADlZY5L-TAbwJHsh8uIA",
+            "icon": "youtube"
         },
         {
-          "group": "Markets",
-          "icon": "dollar-sign",
-          "pages": [
-            "webflow/markets/markets",
-            "webflow/markets/selector",
-            "webflow/markets/form",
-            "webflow/markets/currency-symbol",
-            "webflow/markets/ignore"
-          ]
-
+            "name": "Cloneables",
+            "url": "https://webflow.com/@thind-dev/sites",
+            "icon": "copy"
+        }
+    ],
+    "analytics": {
+        "fathom": {
+            "siteId": "MVDXETUM"
+        }
+    },
+    "navigation": [
+        {
+            "group": "Get Started",
+            "pages": [
+                "introduction",
+                "quickstart",
+                "designer-app"
+            ]
         },
         {
-          "group": "Customer Accounts",
-          "icon": "user",
-          "pages": [
-            "webflow/customer/customer",
-            {
-              "group": "Auth Pages",
-              "pages": [
-                "webflow/customer/login",
-                "webflow/customer/signup",
-                "webflow/customer/recover",
-                "webflow/customer/reset"
-              ]
-            },
-            "webflow/customer/update",
-            "webflow/customer/address",
-            {
-              "group": "Customer Variables",
-              "pages": [
-                "webflow/customer/variables",
+            "group": "Essentials",
+            "pages": [
+                "essentials/webflow-connect",
+                "essentials/shopify-setup",
+                "essentials/webflow-cms",
+                "essentials/cms-verifier",
+                "essentials/embed",
+                "essentials/shopify-redirect"
+            ]
+        },
+        {
+            "group": "Webflow",
+            "pages": [
+                "webflow/introduction",
                 {
-                  "group": "On Login Variables",
-                  "pages": [
-                    "webflow/customer/on-login/redirect",
-                    "webflow/customer/on-login/css",
-                    "webflow/customer/on-login/remove",
-                    "webflow/customer/on-login/change"
-                  ]
+                    "group": "Product Card",
+                    "icon": "cards",
+                    "pages": [
+                        "webflow/productcard/productcard",
+                        "webflow/productcard/quantity",
+                        "webflow/productcard/addtocart",
+                        {
+                            "group": "Product options",
+                            "pages": [
+                                "webflow/productcard/options/dropdown",
+                                "webflow/productcard/options/radio"
+                            ]
+                        },
+                        {
+                            "group": "Product Subscription",
+                            "pages": [
+                                "webflow/productcard/subscription/dropdown",
+                                "webflow/productcard/subscription/radio"
+                            ]
+                        },
+                        "webflow/productcard/hero-image"
+                    ]
                 },
                 {
-                  "group": "On Logout Variables",
-                  "pages": [
-                    "webflow/customer/on-logout/redirect",
-                    "webflow/customer/on-logout/css",
-                    "webflow/customer/on-logout/remove",
-                    "webflow/customer/on-logout/change"
-                  ]
+                    "group": "Cart",
+                    "icon": "cart-shopping",
+                    "pages": [
+                        "webflow/cart/cart",
+                        {
+                            "group": "Default State",
+                            "pages": [
+                                "webflow/cart/default/wrapper",
+                                "webflow/cart/default/list",
+                                {
+                                    "group": "Cart Item",
+                                    "pages": [
+                                        "webflow/cart/default/cart-item",
+                                        "webflow/cart/default/quantity",
+                                        "webflow/cart/default/price-total",
+                                        "webflow/cart/default/compare-price-total",
+                                        "webflow/cart/default/remove",
+                                        "webflow/cart/default/subscription"
+                                    ]
+                                },
+                                {
+                                    "group": "Discounts",
+                                    "pages": [
+                                        "webflow/cart/default/discount",
+                                        "webflow/cart/default/discount-form",
+                                        "webflow/cart/default/discount-list"
+                                    ]
+                                },
+                                "webflow/cart/default/subtotal",
+                                "webflow/cart/default/checkout",
+                                "webflow/cart/default/go-to-cart"
+                            ]
+                        },
+                        "webflow/cart/empty",
+                        "webflow/cart/count"
+                    ]
+                },
+                {
+                    "group": "Markets",
+                    "icon": "dollar-sign",
+                    "pages": [
+                        "webflow/markets/markets",
+                        "webflow/markets/selector",
+                        "webflow/markets/form",
+                        "webflow/markets/currency-symbol",
+                        "webflow/markets/ignore"
+                    ]
+                },
+                {
+                    "group": "Customer Accounts",
+                    "icon": "user",
+                    "pages": [
+                        "webflow/customer/customer",
+                        {
+                            "group": "Auth Pages",
+                            "pages": [
+                                "webflow/customer/login",
+                                "webflow/customer/signup",
+                                "webflow/customer/recover",
+                                "webflow/customer/reset"
+                            ]
+                        },
+                        "webflow/customer/update",
+                        "webflow/customer/address",
+                        {
+                            "group": "Customer Variables",
+                            "pages": [
+                                "webflow/customer/variables",
+                                {
+                                    "group": "On Login Variables",
+                                    "pages": [
+                                        "webflow/customer/on-login/redirect",
+                                        "webflow/customer/on-login/css",
+                                        "webflow/customer/on-login/remove",
+                                        "webflow/customer/on-login/change"
+                                    ]
+                                },
+                                {
+                                    "group": "On Logout Variables",
+                                    "pages": [
+                                        "webflow/customer/on-logout/redirect",
+                                        "webflow/customer/on-logout/css",
+                                        "webflow/customer/on-logout/remove",
+                                        "webflow/customer/on-logout/change"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Customer Orders",
+                            "pages": [
+                                "webflow/customer/orders",
+                                "webflow/customer/orders-list",
+                                "webflow/customer/order-empty"
+                            ]
+                        },
+                        "webflow/customer/logout"
+                    ]
+                },
+                {
+                    "group": "Wishlist",
+                    "icon": "heart",
+                    "pages": [
+                        "webflow/wishlist/wishlist",
+                        "webflow/wishlist/wishlist-button",
+                        "webflow/wishlist/wishlist-list",
+                        "webflow/wishlist/wishlist-empty"
+                    ]
+                },
+                {
+                    "group": "Search",
+                    "icon": "magnifying-glass",
+                    "pages": [
+                        "webflow/search/search",
+                        "webflow/search/form",
+                        "webflow/search/list"
+                    ]
                 }
-              ]
-            },
-            {
-              "group": "Customer Orders",
-              "pages": [
-                "webflow/customer/orders",
-                "webflow/customer/orders-list",
-                "webflow/customer/order-empty"
-                ]
-            
-            },
-            "webflow/customer/logout"
-          ]
+            ]
         },
         {
-          "group": "Wishlist",
-          "icon": "heart",
-          "pages": [
-            "webflow/wishlist/wishlist",
-            "webflow/wishlist/wishlist-button",
-            "webflow/wishlist/wishlist-list",
-            "webflow/wishlist/wishlist-empty"
-          ]
+            "group": "Dashbaord",
+            "pages": [
+                "dashboard/introduction",
+                {
+                    "group": "Sync Data",
+                    "icon": "shopify",
+                    "pages": [
+                        "dashboard/sync-products",
+                        "dashboard/sync-collections",
+                        "dashboard/sync-policies"
+                    ]
+                },
+                "dashboard/cms-verifier"
+            ]
         },
         {
-          "group": "Search",
-          "icon": "magnifying-glass",
-          "pages": [
-            "webflow/search/search",
-            "webflow/search/form",
-            "webflow/search/list"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Dashbaord",
-      "pages": [
-        "dashboard/introduction",
+            "group": "Integrations",
+            "icon": "link",
+            "pages": [
+                "integrations/introduction",
+                "integrations/looop-config",
+                "integrations/google-analytics",
+                "integrations/fathom-analytics",
+                "integrations/google-autocomplete",
+                "integrations/okendo"
+            ]
+        },
         {
-          "group": "Sync Data",
-          "icon": "shopify",
-          "pages": [
-            "dashboard/sync-products",
-            "dashboard/sync-collections",
-            "dashboard/sync-policies"
-          ]
+            "group": "JS Utilities",
+            "icon": "code",
+            "pages": [
+                "integrations/js-utils/introduction"
+            ]
         }
-        ,
-            "dashboard/cms-verifier"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "icon": "link",
-      "pages": [
-        "integrations/introduction",
-        "integrations/looop-config",
-        "integrations/google-analytics",
-        "integrations/fathom-analytics",
-        "integrations/google-autocomplete",
-        "integrations/okendo"
-      ]
-    },
-    {
-      "group": "JS Utilities",
-      "icon": "code",
-      "pages": [
-        "integrations/js-utils/introduction"
-      ]
-    }
-  ]
+    ]
 }
