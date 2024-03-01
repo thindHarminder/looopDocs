@@ -165,7 +165,7 @@
                             "group": "Auth Pages",
                             "pages": [
                                 "webflow/customer/login",
-                                "webflow/customer/signup",
+                                "webflow/customer/customer-signup",
                                 "webflow/customer/recover",
                                 "webflow/customer/reset"
                             ]
