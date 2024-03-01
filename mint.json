@@ -252,7 +252,8 @@
         "integrations/introduction",
         "integrations/looop-config",
         "integrations/google-analytics",
-        "integrations/fathom-analytics"
+        "integrations/fathom-analytics",
+        "integrations/google-autocomplete"
       ]
     },
     {
