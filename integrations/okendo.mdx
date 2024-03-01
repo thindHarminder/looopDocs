@@ -1,0 +1,98 @@
+---
+title: 'Okendo Reviews'
+description: 'Show Okendo reviews collected on your Shopify store.'
+---
+
+<video
+    autoPlay
+  className="w-full aspect-video"
+  src="https://okendo.io/wp-content/uploads/2023/06/Review_Social-Proof_230623-1-hevc-safari-vp9-chrome.webm"
+></video>
+
+
+
+## Setup
+Update the Looop Config to enable Google Autocomplete for address fields.
+
+ ```html
+ <script>
+    window.LooopConfig = {
+        // ... other previous configs
+    okendo: true,
+    okendoId: "USER_ID",
+    }
+</script>
+```
+
+## Webflow Setup
+
+Once you have configured the Looop Config, you can add the Okendo Reviews component to your Webflow project.
+
+<Steps>
+<Step>
+Add an empty div block to your Webflow project where you want to display any Okendo reviews component.
+</Step>
+<Step>
+Add the following code to the custom attributes of the div block.
+
+```html
+looop=okendo-widget
+```
+```html
+okendo-widget=OKENDO_COMPONENT_TYPE
+```
+You can see list of available components [here](#okendo-reviews-component-types).
+</Step>
+</Steps>
+
+## Get Okendo User ID
+
+1\. Navigate to [https://reviews.okendo.io/admin/#/reviews](https://reviews.okendo.io/admin/#/reviews)
+
+
+2\. Go to settings.
+
+<Frame>
+<img src="/images/os-1.png" />
+</Frame>
+
+3\. Click "Integrations"
+
+<Frame>
+<img src="/images/os-2.png" />
+</Frame>
+
+4\. Click on the pencil icon next to the `Okendo` in `Credentials` tab to see your Okendo User ID.
+
+<Frame>
+<img src="/images/os-3.png" />
+</Frame>
+
+5\. Click "Copy" to copy the User ID.
+
+<Frame>
+<img src="/images/os-4.png" />
+</Frame>
+
+
+## Okendo Reviews Component Types
+1. [Review Widget](https://docs.okendo.io/on-site/on-site-widgets/reviews-widget)
+```html
+okendo-widget=data-oke-widget
+```
+2. [Star Rating](https://docs.okendo.io/on-site/on-site-widgets/star-rating)
+```html
+okendo-widget=data-oke-star-rating
+```
+3. [Questions Widget](https://docs.okendo.io/on-site/on-site-widgets/questions-widget)
+```html
+okendo-widget=data-oke-questions-widget
+```
+4. [Carousel Widget](https://docs.okendo.io/on-site/on-site-widgets/reviews-carousel-widget)
+```html
+okendo-widget=data-oke-carousel
+```
+
+
+
+

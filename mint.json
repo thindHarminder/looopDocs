@@ -253,7 +253,8 @@
         "integrations/looop-config",
         "integrations/google-analytics",
         "integrations/fathom-analytics",
-        "integrations/google-autocomplete"
+        "integrations/google-autocomplete",
+        "integrations/okendo"
       ]
     },
     {
