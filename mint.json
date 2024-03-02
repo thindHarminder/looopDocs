@@ -88,6 +88,7 @@
                     "icon": "cards",
                     "pages": [
                         "webflow/productcard/productcard",
+                        "webflow/productcard/price",
                         "webflow/productcard/quantity",
                         "webflow/productcard/addtocart",
                         {
