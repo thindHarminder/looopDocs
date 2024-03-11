@@ -1,28 +1,6 @@
 ```html
-<script>
-function redirect() {
-  if (window.self === window.top) {
-    var currentUrl = window.location.href,
-      urlObject = new URL(currentUrl),
-      //replace this with your webflow domain
-      webflowDomain = "YOUR_WEBFLOW_DOMAIN",
-      currentHostname = urlObject.hostname,
-      currentPath = urlObject.pathname.split("/").filter(e => e),
-      lastPathSegment = currentPath.pop();
-    if ("reset" == currentPath[1] || "reset" == currentPath[2]) {
-      var resetUrl = `https://${webflowDomain}/account/reset?reseturl=${currentUrl}`;
-      window.location.href = resetUrl, console.log("Reset Page")
-    } else if ("cart" == lastPathSegment || "cart" == currentPath[2]) {
-      return;
-    } else if ("account" !== lastPathSegment && "account" !== currentPath[2]) {
-      var updatedUrl = currentUrl.replace(currentHostname, webflowDomain);
-      window.location.href = updatedUrl;
-    } 
-  }
-}
-redirect();
-</script>
+<script defer src="https://cdn.uselooop.com/scripts/redirect.js" domain="YOUR_CUSTOM_DOMAIN"></script>
 ```
 <Note>
-Replace `YOUR_WEBFLOW_DOMAIN` with your webflow domain. For example, if your webflow domain is `example.com`, then replace `YOUR_WEBFLOW_DOMAIN` with `example.com`.
+Replace `YOUR_CUSTOM_DOMAIN` with your front end domain. For example, if your webflow domain is `example.com`, then replace `YOUR_CUSTOM_DOMAIN` with `example.com`.
 </Note>

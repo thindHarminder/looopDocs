@@ -1,15 +1,8 @@
 ```html
-<script>
-function redirect(){
-//replace with webflow domain
-var e="YOUR_WEBFLOW_DOMAIN",
-//replace with webflow page name - optional
-o="",
-
-r=window.location.href;if(-1===r.indexOf("redirect=false")){var i=`${r}?redirect=false`;if(""!==o)var t=`https://${e}/${o}?looopredirect=${i}`;else t=`https://${e}?looopredirect=${i}`;window.location.href=t}}redirect();
-</script>
+<script defer src="https://cdn.uselooop.com/scripts/checkout-redirect.js" domain="YOUR_CUSTOM_DOMAIN" page="YOUR_PAGE_NAME">
+ </script>
 ```
 
 <Note>
-Replace `YOUR_WEBFLOW_DOMAIN` with your webflow domain. For example, if your webflow domain is `example.com`, then replace `YOUR_WEBFLOW_DOMAIN` with `example.com`.
+Replace `YOUR_CUSTOM_DOMAIN` with your webflow domain. For example, if your webflow domain is `example.com`, then replace `YOUR_CUSTOM_DOMAIN` with `example.com`. Also, we recoomend to have an empty page in site with the name `checkout` and replace `YOUR_PAGE_NAME` with `checkout`.
 </Note>
