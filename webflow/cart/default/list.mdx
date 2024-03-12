@@ -1,18 +1,21 @@
 ---
 title: 'Cart List'
-description: 'The cart list is a collection list of all the variants you have in the Variants CMS collection.'
+description: 'The cart list is a collection list of all the products user has added to their cart.'
 ---
 
-The cart items are dynamically shown and hidden from the user depending on what they have in their cart.
 
 ## Setup
 
-1. Add a new collection list inside the [default wrapper](/webflow/cart/default/wrapper) element.
-2. Add the custom attribute to the webflow collection list item element.
+1. Add a new div list inside the [default wrapper](/webflow/cart/default/wrapper) element. This will be the list of all the products user has added to their cart. We will keeep adding the products to this list as the user adds them to the cart.
 <Frame>
 <img src="/images/cart-list-item.jpg" />
 </Frame>
+2. Add a div inside the list div we just created. This second div will serve as template for each cart item.
+<Frame>
+<img src="/images/cart-tem-2.jpg" />
+</Frame>
+3. Add following attributes to the second div.
 ```html
-looopCartItem=SET_DYNAMIC_VALUE_OF_VARIANTS_LOOOP_ID
+looopCartItem=""
 ```
 3. Develop the [cart item ](/webflow/cart/default/cart-item)by adding quantity input, remove button, and the variant image.

@@ -122,6 +122,9 @@
                                     "group": "Cart Item",
                                     "pages": [
                                         "webflow/cart/default/cart-item",
+                                        "webflow/cart/default/image",
+                                        "webflow/cart/default/product-name",
+                                        "webflow/cart/default/variant-name",
                                         "webflow/cart/default/quantity",
                                         "webflow/cart/default/price-total",
                                         "webflow/cart/default/compare-price-total",
