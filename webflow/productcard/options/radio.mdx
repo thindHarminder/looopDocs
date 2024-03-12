@@ -34,6 +34,30 @@ looop=product-option-select
 When the product option is selected, the radio button should be checked. To do this, we will add a combo class of `is-checked` to the radio button.
 You can use this class to design how your checked radio buttons look.
 
+
+## Color Swatch
+Radio buttons can be used to show color swatches. To do this, we will add a background color to the radio button.
+
+We need to add following custom attributes to the radio button:
+```html
+lp-is-color=true
+```
+<Note>
+As long as your color options names are simple colors like Black, white, Red, Blue etc. this will work. However, if you are using custom color names like Space Grey, Phntom Black, Plum Purple etc you need to use [LooopConfig](/integrations/looop-config).
+</Note>
+
+## Custom Colors config
+Add custom color to [LooopConfig](/integrations/looop-config) in the following format:
+```html
+<script>
+   window.LooopOptions = {
+  	"Ionic White": "#ffff00",
+    "Basalt Black": "#000000",
+    "Lunar Gray" :"#4e4e4e"
+   }
+   
+</script>
+```
 ## What will be updated?
 On page load for each Shopify product option, we will duplicate the `product-option-wrapper` for each option set, duplicate `product-option-select` for each value of each option set, and update the `product-option-name` with the product option name.
 
