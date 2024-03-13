@@ -6,59 +6,15 @@ icon: 'shopify'
 
 import Adminscopes from '/snippets/shopify-admin-scopes.mdx';
 
+<img src="/images/shopify-appstore.png"/>
+
 ## Prerequisites
 1. Active Shopify account
-2. User with Admin access to the Shopify account
+2. User with access to install Shopify apps
 
-## Step 1: Create a Private App in Shopify
-1. Log in to your Shopify account.
-2. From your Shopify admin, go to `Apps` > `App and sales channel settings`.
-3. Click on `Develop apps`.
-<Note>
-If you have not developed any custom apps before for the selected store, Shopify will ask you to enable permissions to build custom/private apps. 
-</Note>
-4. Click on `Create an app`.
-5. Enter the app name and click on `Create app`.   
+## Install Looop Shopify App
+1. Go to [Looop Shopify App](https://apps.shopify.com/looop-build-with-webflow) and click on `Install` button.
 
-## Step 2: Configure API scopes
-1. Click the `Configure Admin API scopes` button.
-2. Select the following scopes:
-   <Adminscopes />
-3. Click `Save`.
-4. Go to `Configuration` Tab
-5. Click `Configure` next to Storefront API
-6. Select all the available scopes and click `Save`.
-
-## Step 3: Install the app in your store
-1. Click on `Install app` in the top right corner.
-2. Click on `Install` again in the confirmation dialog.
-3. Once the app is installed, you will be redirected to the app credentials page.
-<Tip>
-You will see two API keys - Admin API access token and Storefront API access token. Don't Reveal the Admin API access token yet as it will be visible only once.
-</Tip>
-
-## Step 4: Get the Shopify store URL
-1. Go to your Shopify admin.
-2. Go to `Settings` > `Domains`.
-<Frame>
-<img src="https://3619827910-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fa4EwTvYpQEznnxPctM8Z%2Fuploads%2Fxy0XBiTUCqiXvnUWW6l3%2FScreenshot%202024-01-03%20at%2011.26.47%E2%80%AFAM.png?alt=media&token=649fb7ab-f626-45d9-962f-74bfcda8344f"/>
-</Frame>
-3. Copy the `.myshopify.com` URL.
-<Frame>
-<img src="https://3619827910-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fa4EwTvYpQEznnxPctM8Z%2Fuploads%2FoiIKgnwT1WiUcDrpJtD1%2FScreenshot%202024-01-03%20at%2011.28.26%E2%80%AFAM.png?alt=media&token=3f224a8e-e938-48d4-95b7-6bfb06c8da39"/>
-</Frame>
-<Warning>
-If you see multiple .myshopify.com URLs, use the one that is the oldest/the first domain you got on the creation of the Shopify StorageEvent.
-</Warning>
-
-## Step 5: Connect Shopify to Looop
-1. Now copy reveal the Admin API access token and Storefront API access token from the Shopify app credentials page.
-2. On Looop Shopify setup page enter the following details:
-   - Shopify Store URL [Step 4](#step-4-get-the-shopify-store-url)
-   - Admin API access token generated in [Step 3](#step-3-install-the-app-in-your-store)
-   - Storefront API access token generated in [Step 3](#step-3-install-the-app-in-your-store)
-3. Click `Save & Connect`.
-4. Looop will verify the credentials and connect to your Shopify store.
 <Note>
 If you see an error, please verify the credentials and try again.
 </Note>
